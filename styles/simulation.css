@@ -63,6 +63,10 @@
 /* Agent list and rows */
 .agent-list {
   display: flex;
+  background:rgb(255, 255, 255); /* Vibrant green for retro feel */
+  border: 4px solid #4bff01; /* Bright green border for pop */
+  padding: 20px;
+  border-radius: 10px; /* Smooth corners */
   flex-direction: column;
   gap: 20px;
 }
@@ -150,6 +154,17 @@
       padding: 10px;
       border-radius: 10px;
   }
+
+  .agent-list {
+    display: flex;
+    background:rgb(255, 255, 255); /* Vibrant green for retro feel */
+    border: 4px solid #4bff01; /* Bright green border for pop */
+    padding: 20px;
+    border-radius: 10px; /* Smooth corners */
+    flex-direction: column;
+    gap: 20px;
+  }
+  
 
   .agent-row {
       font-size: 12px;
