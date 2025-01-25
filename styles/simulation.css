@@ -64,14 +64,14 @@
 .agent-list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .agent-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   color: #333; /* Dark text for better contrast */
 }
 
@@ -95,7 +95,7 @@
   border: 3px solid #000; /* Bold border for retro design */
   cursor: pointer;
   font-family: 'Press Start 2P', cursive; /* Retro font */
-  font-size: 15px;
+  font-size: 12px;
   border-radius: 5px;
   box-shadow: 0 4px 0 #000; /* Depth with shadow */
   transition: transform 0.2s ease, background-color 0.3s ease;
@@ -111,14 +111,14 @@
 .vote-count {
   display: flex;
   align-items: center;
-  font-size: medium;
+  font-size: small;
   gap: 10px;
   color: #333;
 }
 
 .vote-icon {
   color: #FF69B4; /* Vibrant pink for retro look */
-  font-size: 24px; /* Slightly larger */
+  font-size: 12px; /* Slightly larger */
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -135,7 +135,7 @@
   height: auto;
   margin-top: 20px;
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.8;
   color: #e0e0e0; /* Light grey text for readability */
   border-radius: 10px; /* Smooth corners */
@@ -157,7 +157,7 @@
 
   .vote-button {
       font-size: 10px;
-      padding: 6px 10px;
+      padding: 4px 8px;
   }
 }
 
@@ -180,3 +180,6 @@
   color: white; /* Invert color */
   transform: scale(1.2); /* Slight zoom effect */
 }
+
+
+
