@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #8fcfe9;
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden;
+  }
+  
+/* Sidebar styling */
+.sidebar {
+  position: fixed; /* Fix sidebar to the left */
+  top: 10px;
+  left: 10px;
+  width: 460px; /* Sidebar width */
+  height: 99vh; /* Full height */
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.95); /* Slightly darker for a sleek retro look */
+  border: 6px solidrgb(101, 161, 217); /* Neon green border */
+  box-shadow: 5px 5px 10px rgba(69, 74, 69, 0.6); /* Subtle glowing shadow */
+  z-index: 10; /* Keep it above canvas */
+  border-radius: 16px; /* Smooth corners for a polished design */
+}
+
+/* Scrollbar Styling for Webkit Browsers */
+
+/* Title box styling */
+.title-box {
+  background: #0f7522; /* Deep green background */
+  color: white; /* White text for contrast */
+  font-size: 24px; /* Increased font size for better visibility */
+  padding: 20px;
+  text-align: center;
+  border: 4px solid #79d70f; /* Neon green border */
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.8); /* Neon shadow */
+  margin-bottom: 20px;
+  border-radius: 10px; /* Smooth corners */
+}
+
+/* Agents box styling */
+.agents-box {
+  background: #93ef9a; /* Vibrant green for retro feel */
+  border: 4px solid #4bff01; /* Bright green border for pop */
+  padding: 20px;
+  border-radius: 10px; /* Smooth corners */
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); /* Subtle glowing shadow */
+}
+
+/* Agents header styling */
+.agents-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 14px; /* Slightly larger for better readability */
+  color: #000;
+  font-weight: bold; /* Emphasized text */
+}
+
+/* Agent list and rows */
+.agent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.agent-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #333; /* Dark text for better contrast */
+}
+
+.agent-name {
+  cursor: pointer;
+  font-size: medium;
+  color:rgb(19, 9, 9); /* Deep green for retro look */
+  transition: color 0.3s ease;
+}
+
+.agent-name:hover {
+  color: #79d70f; /* Neon green on hover */
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.6); /* Glow effect */
+}
+
+/* Vote button styling */
+.vote-button {
+  background: #333; /* Dark background for contrast */
+  color: white; /* White text */
+  padding: 8px 15px; /* Better padding for clickability */
+  border: 3px solid #000; /* Bold border for retro design */
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive; /* Retro font */
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 0 #000; /* Depth with shadow */
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.vote-button:hover {
+  background: #79d70f; /* Neon green background */
+  color: #000; /* Dark text */
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Vote count styling */
+.vote-count {
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  gap: 10px;
+  color: #333;
+}
+
+.vote-icon {
+  color: #FF69B4; /* Vibrant pink for retro look */
+  font-size: 24px; /* Slightly larger */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.vote-icon:hover {
+  color: #ff4d4d; /* Red on hover */
+  transform: rotate(20deg); /* Fun rotation */
+}
+
+/* Info box styling */
+.info-box {
+  background: #1e1e1e; /* Dark grey background for contrast */
+  border: 4px solid #79d70f; /* Neon green border */
+  padding: 15px;
+  height: auto;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #e0e0e0; /* Light grey text for readability */
+  border-radius: 10px; /* Smooth corners */
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Glowing shadow */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 990px) {
+  .sidebar {
+      width: 18%; /* Full width for smaller screens */
+      height: auto; /* Adjust height */
+      padding: 10px;
+      border-radius: 10px;
+  }
+
+  .agent-row {
+      font-size: 12px;
+  }
+
+  .vote-button {
+      font-size: 10px;
+      padding: 6px 10px;
+  }
+}
+
+/* Close button styling */
+.close-btn1 {
+  position: absolute;
+  top: 14px; /* Adjust based on your modal's padding */
+  right: 15px; /* Adjust based on your modal's padding */
+  background: transparent; /* Transparent background for a clean look */
+  border: none; /* Remove default button styling */
+  font-size: 34px; /* Size of the "×" */
+  color: #ff4d4d; /* Vibrant red for retro theme */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-weight: bold; /* Emphasize the button */
+  z-index: 101; /* Ensure it stays above the modal content */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+.close-btn1:hover {
+  color: white; /* Invert color */
+  transform: scale(1.2); /* Slight zoom effect */
+}

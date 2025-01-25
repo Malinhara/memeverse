@@ -1,0 +1,148 @@
+
+
+/* Modal Content */
+.modal-content3 {
+    background-color: rgb(161, 219, 93); /* Green background */
+    padding: 20px;
+    width: 100%;
+    height:98vh;
+    border: 4px solidrgb(11, 11, 10); /* Neon green border */
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+/* Close Button */
+.close-btn3 {
+    font-size: 40px;
+    color: red; /* Red color for the close button */
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 14px;
+}
+
+/* Optional: Styling for header and lists */
+h2, h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+ul {
+    list-style-type: disc; /* Bullet points */
+    margin-top: 10px;
+    padding-left: 40px; /* Add padding to the left to accommodate bullets */
+}
+
+ul li {
+    margin-top: 20px; /* Add gap between list items */
+    margin-bottom: 10px; /* Optional: You can also tweak this */
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Ensure modal content is scrollable */
+.modal-content3 {
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+/* Button Styling */
+#aboutButton {
+    background-color: #1f221f; /* Dark background */
+    border: none;
+    color: rgb(245, 245, 245);
+    padding: 15px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 23px;
+    border: 4px solid #79d70f; /* Neon green border */
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.8); /* Neon shadow */
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#aboutButton:hover {
+    background-color: #45a049;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 990px) {
+    /* Modal adjustments for smaller screens */
+    .modal {
+        width: 100%;
+        padding: 1px;
+        overflow-y: auto;
+
+    }
+
+    /* Adjust modal content size */
+    .modal-content3 {
+        padding: 15px;
+        height:100%;
+    }
+
+    /* Close button size */
+    .close-btn3 {
+        font-size: 40px;
+        top: 30px;
+        right: 20px;
+    }
+
+    /* Adjust font sizes in the modal */
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    ul li {
+        font-size: 16px; /* Smaller text size for list items */
+    }
+
+    /* Adjust About button */
+    #aboutButton {
+        font-size: 18px;
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Further adjust for mobile */
+    .modal {
+        width: 95%;
+    }
+
+    .modal-content3 {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    ul li {
+        font-size: 14px; /* Even smaller text for mobile */
+    }
+
+    #aboutButton {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
