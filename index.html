@@ -250,22 +250,17 @@
 </div>
 </body>
 <script>
+  // Function to check screen size and display an alert if needed
+  function checkScreenSize() {
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
 
+      alert("Your screen size is small. For the best experience, use a larger device.");
 
-  // Check screen size and show alert
-function checkScreenSize() {
-      alert("Please turn your screen to landscape mode if you are using Mobile Phone.");
+  }
 
-}
-
-// Run check on page load
-checkScreenSize();
-
-// Run check on window resize
-window.addEventListener("resize", checkScreenSize);
-
-
-
+  // Run the check when the page loads
+  window.onload = checkScreenSize;
 </script>
 
 
