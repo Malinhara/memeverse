@@ -15,8 +15,9 @@
   position: fixed; /* Fix sidebar to the left */
   top: 10px;
   left: 10px;
-  width: 460px; /* Sidebar width */
+  width: 410px; /* Sidebar width */
   height: 99vh; /* Full height */
+  overflow-y: auto; /* Enable scrolling */
   padding: 15px;
   background: rgba(0, 0, 0, 0.95); /* Slightly darker for a sleek retro look */
   border: 6px solidrgb(101, 161, 217); /* Neon green border */

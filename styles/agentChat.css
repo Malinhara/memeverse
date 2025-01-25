@@ -4,8 +4,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 23%; /* Adjust width for the left side */
-    height: 99vh; /* Full height */
+    width: 28%; /* Adjust width for the left side */
+    height: 100vh; /* Full height */
     background-color: rgba(0, 0, 0, 0.9); /* Enhanced darker background with transparency */
     z-index: 9999; /* Ensure it's on top of other content */
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Subtle glowing effect */
@@ -15,8 +15,9 @@
 .modal-content2 {
     background-color: #1e1e1e; /* Dark grey content background for contrast */
     position: relative;
+    height: 90%;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     border-left: 4px solid #79d70f; /* Green retro border */
 }
@@ -42,7 +43,7 @@
 /* Container for Agent Info */
 .agent-info {
     text-align: center;
-    margin: 30px auto;
+    margin: 20px auto;
     background-color: #000; /* Black background for retro look */
     padding: 20px;
     border-radius: 15px;
@@ -55,7 +56,7 @@
     padding: 15px;
     border: 5px solid #4bff01; /* Light green border for retro style */
     border-radius: 15px;
-    width: 450px;
+    width: 300px;
     margin: 20px auto;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); /* Stronger neon glow */
@@ -76,7 +77,7 @@
 /* Header with pixelated 8-bit look */
 .agent-info h1 {
     color: #0cff00; /* Bright green retro text */
-    font-size: 36px;
+    font-size: 26px;
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.7); /* Neon text effect */
 }
@@ -84,7 +85,7 @@
 /* Paragraph styling */
 .agent-info p {
     color: #99ffcc; /* Light teal for readability on black */
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.7;
     letter-spacing: 1px;
     text-shadow: 1px 1px 3px rgba(0, 255, 0, 0.6); /* Retro glow */

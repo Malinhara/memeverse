@@ -564,31 +564,25 @@ animate();
 
 
 canvas.addEventListener('click', (event) => {
-  const mouseX = event.clientX;
-  const mouseY = event.clientY;
+  const rect = canvas.getBoundingClientRect(); // Get the canvas's position
+  const mouseX = event.clientX - rect.left; // Adjust mouse X coordinate
+  const mouseY = event.clientY - rect.top;  // Adjust mouse Y coordinate
 
   players.forEach(player => {
     const sprite = player.sprite;
-    
+
     // Check if the click is within the bounds of the player sprite
     if (
       mouseX >= sprite.position.x && 
       mouseX <= sprite.position.x + sprite.width &&
       mouseY >= sprite.position.y && 
       mouseY <= sprite.position.y + sprite.height
-      
     ) {
-      console.log(player.name,"hai");
-      openModal(player.email)
+      console.log(player.name, "hai");
+      openModal(player.email);
     }
-
-
   });
 });
-
-
-
-
 
 
 
