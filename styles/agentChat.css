@@ -85,7 +85,7 @@
 /* Paragraph styling */
 .agent-info p {
     color: #99ffcc; /* Light teal for readability on black */
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7;
     letter-spacing: 1px;
     text-shadow: 1px 1px 3px rgba(0, 255, 0, 0.6); /* Retro glow */

@@ -168,7 +168,7 @@
   right: 15px; /* Adjust based on your modal's padding */
   background: transparent; /* Transparent background for a clean look */
   border: none; /* Remove default button styling */
-  font-size: 34px; /* Size of the "×" */
+  font-size: 22px; /* Size of the "×" */
   color: #ff4d4d; /* Vibrant red for retro theme */
   cursor: pointer; /* Pointer cursor on hover */
   font-weight: bold; /* Emphasize the button */
