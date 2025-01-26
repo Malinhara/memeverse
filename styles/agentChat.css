@@ -106,11 +106,16 @@
         top: 10;
         left: 0;
         width: 28%; /* Adjust width for the left side */
-        height: 800px;
+        height: 1000px;
         background-color: rgba(0, 0, 0, 0.9); /* Enhanced darker background with transparency */
         z-index: 9999; /* Ensure it's on top of other content */
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Subtle glowing effect */
     }
-    
+
+    iframe{
+
+        height:650px;
+    }
+  
   
   }
