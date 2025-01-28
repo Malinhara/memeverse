@@ -2,7 +2,7 @@ const aboutButton = document.getElementById('aboutButton');
 const aboutModal = document.getElementById('aboutModal');
 const closeModalBtn = document.getElementById('closeModalBtn3');
 
-// Show the modal when the About button is clicked
+
 aboutButton.addEventListener('click', () => {
   aboutModal.style.display = 'block';
 });
