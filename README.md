@@ -1,11 +1,11 @@
 
-<h1>Yuri Ai 🤖</h1>
+<h1>Deepverse 🤖</h1>
 
-## Powered by the Deepseek and Eliza framework.
+## Powered by the Deepseek .
 
 <p align="left">
-  <a href="https://postimg.cc/06HR4NBW" target="_blank">
-    <img src="https://i.postimg.cc/XJnjpGcb/Untitled-2x-34.png" alt="Image Description" width="600" height="400" />
+  <a href="![image](https://github.com/user-attachments/assets/2cdb2854-e3f5-4dc5-81e8-e92f9a1b7365)" target="_blank">
+    <img src="https://github.com/user-attachments/assets/c12b87a2-1219-4d27-8107-09a63721b5f9" alt="Image Description" width="400" height="200" />
   </a>
 </p>
 
@@ -16,7 +16,11 @@
   <a href="https://twitter.com/YourTwitterLink" target="_blank">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
   </a>
+  <a href="https://solana.com" target="_blank">
+    <img src="https://img.shields.io/badge/Solana-0A1D47?style=for-the-badge&logo=solana&logoColor=white" alt="Solana">
+  </a>
 </p>
+
 
 ## 🌍 README Translations
 
@@ -24,11 +28,9 @@
 
 ##  🚩 Overview
 
-The Yuri AI is an AI-powered solution designed to bring humor and creativity to your website. It uses the **Deepseeker API** and **Eliza framework** for enhanced intelligence and can be easily embedded as an iframe. 
+Deepverse is an interactive simulation where AI agents with distinct personalities live and interact in a virtual environment. Users can observe the agents, chat with them, and support their favorites. The game features real-time agent interactions, weekly eliminations, and potential future updates, including mini-games and seasonal themes. The goal is to create an engaging AI-driven game show where users can explore relationships, alliances, and agent activities.
 
-Additionally, Yuri integrates **DexScreener** for real-time tracking of decentralized exchange (DEX) trading metrics, providing insights into trading volume, liquidity, and price trends. 
-
-With future updates, the Meme Agent will support additional integrations, offering a more versatile and engaging experience.
+For more details, visit Deepverse.
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
@@ -38,7 +40,6 @@ With future updates, the Meme Agent will support additional integrations, offeri
 
 - 🤖 Chatbots
 - 🕵️ Autonomous Agents
-- 📈 Business Process Handling
 - 🧠 Trading
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
@@ -46,10 +47,11 @@ With future updates, the Meme Agent will support additional integrations, offeri
 
 ## ✨ Features
 
-- 🛠️ Full-featured Discord, Twitter and Telegram connectors
+- 🛠️ Full-featured Discord, Twitter, and Telegram connectors
 - 📚 Cross-platform
-- 🚀 add dexscreener integration and Tiktok integration to the 
+- 🚀 Integration with DexScreener and TikTok
 - 📦 Just works!
+- 💼 Added PhatHam wallet integration
 
 
 
@@ -64,67 +66,26 @@ With future updates, the Meme Agent will support additional integrations, offeri
 Install my-project with npm
 
 ```bash
-git clone https://github.com/Malinhara/Agent.git
+git clone https://github.com/Malinhara/deepverse.git
 ```
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
 
-## Usage
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
-
-Go to the Frontend section and type terminal
-
-```bash
-npm install 
-```
-
-Go to the Backend section and type the terminal
-
-```bash
-npm install --save-dev nodemon
-```
-
-## Finally setup the Environment Variables
-
-#### Backed env
-
-#### Front end env 
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
 
-## Yuri's Memecoin Trend Analyzing Agent: Tech Stack Overview
+## Deepverse Tech Stack Overview
 
-### 1. Data Collection and Ingestion
-Yuri uses **Apache Kafka** for real-time streaming, collecting memecoin-related data from:
-- **Twitter API**
-- **Reddit API**
-- **TikTok API**
-- **Telegram channels**
-- **DexScreener** (for decentralized exchange data)
+### Data Collection & Ingestion:
 
-### Collected Data Includes:
-- Hashtags and mentions  
-- Trading metrics (volume, liquidity)  
-- Sentiment analysis  
+1. Real-time data from social media (Twitter, Telegram, TikTok)
+  Data Storage & Management:
 
-### 2. Advanced Data Storage and Management
-- **Snowflake**: Scalable data warehousing for fast querying of trends and engagement metrics.  
-- **Elasticsearch**: Indexing mentions and sentiment data for rapid search and retrieval.  
-- **MongoDB**: Handling unstructured data like memes, comments, and multimedia content.
-
-### 3. Interactive Visualization and Reporting
-- **Plotly** and **Dash**: Interactive dashboards displaying:  
-  - Price movements  
-  - Sentiment scores  
-  - Trading metrics  
-- **Grafana** and **Kibana**: Monitoring trends, sentiment shifts, and DEX activity for deeper insights.
-
-### 4. Machine Learning and Predictive Analytics
-- **TensorFlow** & **PyTorch**: Advanced sentiment analysis and natural language processing using **Hugging Face Transformers**.  
-- **Scikit-learn**: For clustering, classification, and predicting memecoin trends to identify emerging opportunities.
-
+2. Snowflake for scalable data warehousing
+3. Elasticsearch for fast indexing
+4. MongoDB for unstructured content
+5. TensorFlow & PyTorch for sentiment analysis and trend prediction
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
 
@@ -132,15 +93,9 @@ Yuri uses **Apache Kafka** for real-time streaming, collecting memecoin-related 
 
 ## Main Tech Stack
 
-**Client:** React,TailwindCSS
-
-**Server:** Node, Express
+**Client:** Html,CSS, js
 
 **LLM:** Deepseeker Api
-
-**Website** dexscreener API
-
-**Agent:** Eliza
 
 **Social media Api:** Twitter 
 
@@ -211,7 +166,7 @@ Our comprehensive analysis system evaluates repositories across four key dimensi
 
 MIT License
 
-Copyright (c) [2025] [AI AGENT]
+Copyright (c) [2025] [deepverse]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
