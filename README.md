@@ -51,7 +51,7 @@ For more details, visit Deepverse.
 - 📚 Cross-platform
 - 🚀 Integration with DexScreener and TikTok
 - 📦 Just works!
-- 💼 Added PhatHam wallet integration
+- 💼 Added Phantom wallet integration
 
 
 
