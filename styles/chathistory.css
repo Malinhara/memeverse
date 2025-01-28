@@ -1,0 +1,101 @@
+/* Button styling */
+.button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 8px 16px; /* Reduced padding */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px; /* Reduced font size */
+    box-shadow: 0 4px #999;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 100; /* Sit on top */
+    left: 0; /* Align to the left */
+    top: 0; /* Start at the top */
+    width: 30%; /* Set the width of the modal */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 0; /* Remove margin to align at the top */
+    padding: 15px; /* Reduced padding */
+    border: 1px solid #888;
+    border-radius: 0; /* No border-radius for a clean left-side look */
+    width: 100%; /* Full width of the modal */
+    height: 100%; /* Full height of the modal */
+    box-shadow: none; /* Remove extra shadow */
+    animation: fadeIn 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Fade-in animation for modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Chat history container */
+.chat-history {
+    flex: 1; /* Take up remaining space */
+    overflow-y: auto;
+    padding: 8px; /* Reduced padding */
+    background-color: rgb(227, 236, 144);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 14px; /* Adjusted font size */
+}
+
+/* Chat message */
+
+.chat-message {
+    padding: 8px;
+    margin-bottom: 12px; /* Increased gap between each message */
+    background-color: #e9ffe5; /* Light green */
+    border: 1px solid #c6ecc6;
+    border-radius: 8px;
+    word-wrap: break-word;
+    font-size: 14px;
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+/* Chat message alternate style */
+.chat-message:nth-child(odd) {
+    background-color: #fff9e6; /* Light yellow for alternating messages */
+}
+
+
+/* Close button */
+.close {
+    color: red;
+    align-self: flex-end; /* Align to the right of the modal */
+    font-size: 22px; /* Reduced font size */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
