@@ -29,7 +29,7 @@ async function loadChatData() {
   return data;
 }
 
-// Function to load chat messages one by one with typing effect
+// Function to load chat messages
 async function loadChatMessages() {
   const chatData = await loadChatData(); // Fetch chat data from JSON
   const dialogue = chatData.pages[0].dialogue; // Get the dialogue from JSON
@@ -69,6 +69,16 @@ async function loadChatMessages() {
     }
   }
 
-  // Start displaying messages
+  // Load the first 50 messages instantly
+  for (let i = 0; i < Math.min(50, dialogue.length); i++) {
+    const message = dialogue[i];
+    const messageDiv = document.createElement('div');
+    messageDiv.classList.add('chat-message');
+    messageDiv.innerHTML = `<strong>${message.character}:</strong> ${message.line}`;
+    chatHistory.appendChild(messageDiv);
+  }
+
+  // Start typing the remaining messages
+  index = 50;
   displayMessage();
 }
