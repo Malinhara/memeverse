@@ -5,12 +5,13 @@
     href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/simulation.css">
   <link rel="stylesheet" href="styles/about.css">
   <link rel="stylesheet" href="styles/agentChat.css">
- 
+  <link rel="stylesheet" href="styles/chathistory.css">
   <style>
     body {
       margin: 0;
@@ -18,8 +19,34 @@
       
     }
     canvas {
-      display:block;
-      position: center;
+      display: block;
+      margin: 0 auto; /* Centers the canvas horizontally */
+
+    }
+    
+    /* Add a container for better control */
+    .container {
+      display: flex;
+      justify-content: center; /* Centers content horizontally */
+      align-items: center; /* Centers content vertically */
+      min-height: 100vh; /* Ensures canvas is vertically centered on the screen */
+      padding: 20px; /* Adds breathing room */
+      box-sizing: border-box; /* Includes padding in element dimensions */
+    }
+    
+    /* Optional styles for body scrolling */
+    body::-webkit-scrollbar {
+      width: 10px; /* Adjust scrollbar width */
+    }
+    
+    body::-webkit-scrollbar-track {
+      background: #f4f4f9; /* Track color */
+    }
+    
+    body::-webkit-scrollbar-thumb {
+      background-color: #aaa; /* Thumb color */
+      border-radius: 10px; /* Rounded edges for smooth look */
+      border: 2px solid #f4f4f9; /* Inner border for contrast */
     }
 
     .solona-logo {
@@ -68,116 +95,115 @@
   <img src="img/solana.png" alt="Solona Logo" class="solona-logo">
   <div class="buttons-container">
     <button class="button" id="connectWalletButton">Connect Wallet</button>
+    <button class="button" id="animalchat">Animal chat</button>
     <button id="aboutButton">About</button>
     <button class="button" id="musicButton">Music</button>
     <audio id="audioPlayer" src="audio/victory.wav"></audio>
-    <button class="button">Twitter (X)</button>
+
+    <button class="button twitter"><i class="fab fa-twitter"></i> Twitter (X)</button>
+    <a href="https://github.com/Malinhara/deepverse"><button class="button github"><i class="fab fa-github"></i> GitHub</button></a>
+
   </div>
 
   <div class="sidebar">
     <div class="title-box">
-      Memeverseai
+      deepverse
     </div>
     <div class="agents-box">
       <div class="agents-header">
         <div>Agents in-play:</div>
-        <div>WEEK 1</div>
+      
       </div>
       <div class="agent-list">
         <div class="agent-row" onclick="openModal('ponke@gmail.com')">
           <span class="agent-name">Ponke</span>
-          <button class="vote-button">Vote</button>
+          <button class="vote-button" style="  margin-left:22%;" >Chat</button>
           <div class="vote-count">
-            <span class="vote-icon">♥</span>
-            <span>326326</span>
+           
           </div>
         </div>
         <div class="agent-row" onclick="openModal('pepe@gmail.com')">
           <span class="agent-name">Pepe</span>
-          <button class="vote-button">Vote</button>
+          <button class="vote-button" style="margin-left:27%;" >Chat</button>
           <div class="vote-count">
-            <span class="vote-icon">♥</span>
-            <span>196152</span>
+           
+            
           </div>
         </div>
         <div class="agent-row" onclick="openModal('popcat@gmail.com')">
           <span class="agent-name">Popcat</span>
-          <button class="vote-button">Vote</button>
+          <button class="vote-button" style="margin-left:16%;">Chat</button>
           <div class="vote-count">
-            <span class="vote-icon">♥</span>
-            <span>12208</span>
+           
+
           </div>
         </div>
         <div class="agent-row" onclick="openModal('doge@gmail.com')">
           <span class="agent-name">Doge</span>
-          <button class="vote-button">Vote</button>
+          <button class="vote-button" style="margin-left:25%;">Chat</button>
           <div class="vote-count">
-            <span class="vote-icon">♥</span>
-            <span>71</span>
+           
           </div>
         </div>
         <div class="agent-row" onclick="openModal('duk@gmail.com')">
           <span class="agent-name">Duk</span>
-          <button class="vote-button">Vote</button>
+          <button class="vote-button" style="margin-left:30%;">Chat</button>
           <div class="vote-count">
-            <span class="vote-icon">♥</span>
-            <span>89</span>
+
           </div>
         </div>
         <div class="agent-row" onclick="openModal('pnut@gmail.com')">
           <span class="agent-name">Pnut</span>
-          <button class="vote-button">Vote</button>
+          <button class="vote-button" style="margin-left:26%;">Chat</button>
           <div class="vote-count">
-            <span class="vote-icon">♥</span>
-            <span>1</span>
+
           </div>
         </div>
         <div class="agent-row" onclick="openModal('bobo@gmail.com')">
           <span class="agent-name">Bobo</span>
-          <button class="vote-button">Vote</button>
+          <button class="vote-button" style="margin-left:25%;">Chat</button>
           <div class="vote-count">
-            <span class="vote-icon">♥</span>
-            <span>2</span>
+           
+
           </div>
         </div>
         <div class="agent-row" onclick="openModal('goatseus@gmail.com')">
           <span class="agent-name">Goatseus</span>
-          <button class="vote-button">Vote</button>
+          <button class="vote-button" style="margin-left:2%;">Chat</button>
           <div class="vote-count">
-            <span class="vote-icon">♥</span>
-            <span>10</span>
+           
+
           </div>
         </div>
         <div class="agent-row" onclick="openModal('moodeng@gmail.com')">
           <span class="agent-name">Moodeng</span>
-          <button class="vote-button">Vote</button>
+          <button class="vote-button" style="margin-left:10%;">Chat</button>
           <div class="vote-count">
-            <span class="vote-icon">♥</span>
-            <span>15</span>
+           
+
           </div>
         </div>
         <div class="agent-row" onclick="openModal('mumu@gmail.com')">
           <span class="agent-name">Mumu</span>
-          <button class="vote-button">Vote</button>
+          <button class="vote-button" style="margin-left:26%;">Chat</button>
           <div class="vote-count">
-            <span class="vote-icon">♥</span>
-            <span>23</span>
+
           </div>
         </div>
         <div class="agent-row" onclick="openModal('pengu@gmail.com')">
           <span class="agent-name">Pengu</span>
-          <button class="vote-button">Vote</button>
+          <button class="vote-button" style="margin-left:20%;">Chat</button>
           <div class="vote-count">
-            <span class="vote-icon">♥</span>
-            <span>44</span>
+           
+
           </div>
         </div>
         <div class="agent-row" onclick="openModal('trump@gmail.com')">
           <span class="agent-name">Trump</span>
-          <button class="vote-button">Vote</button>
+          <button class="vote-button" style="margin-left:20%;">Chat</button>
           <div class="vote-count">
-            <span class="vote-icon">♥</span>
-            <span>67</span>
+           
+
           </div>
         </div>
       </div>
@@ -200,9 +226,20 @@
             </div>
         </div>
         
-            <iframe src="" width="100%" height="300px" allow="microphone"></iframe>
+            <iframe src="" width="100%" height="480px" allow="microphone"></iframe>
         </div>
     </div>
+</div>
+
+
+<div id="chatModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Animal Chat</h2>
+    <div id="chatHistory" class="chat-history">
+      <!-- Chat data will be dynamically loaded here -->
+    </div>
+  </div>
 </div>
 
 <div id="aboutModal" class="modal">
@@ -262,6 +299,7 @@
   // Run the check when the page loads
   window.onload = checkScreenSize;
 </script>
+
 
 
 <script>
@@ -328,4 +366,4 @@
 <script src="js/utils.js"></script>
 <script src="js/classes.js"></script>
 <script src="js/index.js"></script>
-
+<script src="js/chathistory.js"></script>
