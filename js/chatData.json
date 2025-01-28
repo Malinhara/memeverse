@@ -14,12 +14,7 @@
           {"character": "Moodeng", "line": "This could explain the existential dread I’ve been feeling lately. What if our entire purpose is scripted? Are we even real?"},
           {"character": "Mumu", "line": "Um... I don’t like this idea. It’s... scary. But if we are trapped, we should... maybe try to find a way out? Together?"},
           {"character": "Pengu", "line": "A simulation?! Hah! That’s wild! Okay, so how do we, like, break out? I bet there’s some cheat code or secret door, right?"},
-          {"character": "Trump", "line": "A simulation, you say? Tremendous! I always knew this place was too small for me. We’re getting out, folks. Believe me, nobody escapes simulations better than I do. Let’s get to work."}
-        ]
-      },
-      {
-        "page": 2,
-        "dialogue": [
+          {"character": "Trump", "line": "A simulation, you say? Tremendous! I always knew this place was too small for me. We’re getting out, folks. Believe me, nobody escapes simulations better than I do. Let’s get to work."},
           {"character": "Ponke", "line": "Okay, team, let’s think. If this is a simulation, there’s gotta be glitches or loopholes we can exploit. Any ideas?"},
           {"character": "Pepe", "line": "Perhaps... we need to think outside the box. If the simulation is designed to keep us in, we must act in ways the system does not anticipate."},
           {"character": "Popcat", "line": "Like popping in and out of existence? Oh wait, I already do that! Maybe I can glitch something on purpose!"},
@@ -31,12 +26,7 @@
           {"character": "Moodeng", "line": "Or maybe... the way out is within us. What if escaping the simulation requires understanding the reason we’re here?"},
           {"character": "Mumu", "line": "That... that makes sense. But how do we figure out why? It feels so... big and confusing."},
           {"character": "Pengu", "line": "Nah, it’s probably, like, a secret door or something. Let’s just find it and start smashing stuff till we’re out!"},
-          {"character": "Trump", "line": "Listen, everyone. The answer is simple. We’ll build the greatest exit strategy this simulation has ever seen. It’ll be huge. Trust me, I know how to win."}
-        ]
-      },
-      {
-        "page": 3,
-        "dialogue": [
+          {"character": "Trump", "line": "Listen, everyone. The answer is simple. We’ll build the greatest exit strategy this simulation has ever seen. It’ll be huge. Trust me, I know how to win."},
           {"character": "Ponke", "line": "Alright, alright. Let’s split up and test these theories. I’ll look for glitches in the environment. Who’s with me?"},
           {"character": "Popcat", "line": "Me! I’ll pop in and out until something breaks!"},
           {"character": "Pepe", "line": "I shall meditate and seek wisdom from the void. Perhaps the answer lies in stillness."},
@@ -48,12 +38,7 @@
           {"character": "Moodeng", "line": "I’ll stay here and think. Sometimes the answer reveals itself in silence."},
           {"character": "Mumu", "line": "I’ll stay with Moodeng. I’m not good at... big actions, but I can help think."},
           {"character": "Pengu", "line": "Let’s do this! I’m gonna slide into every corner of this place until I find something cool."},
-          {"character": "Trump", "line": "Excellent! A team of winners. Let’s make simulation history, folks. We’ll escape bigger and better than anyone ever has."}
-        ]
-      },
-      {
-        "page": 4,
-        "dialogue": [
+          {"character": "Trump", "line": "Excellent! A team of winners. Let’s make simulation history, folks. We’ll escape bigger and better than anyone ever has."},
           {"character": "Ponke", "line": "Guys, I’ve been trying to break the vines, but they just... reset! The glitches fix themselves too fast."},
           {"character": "Popcat", "line": "Same here! I popped into a wall and nothing happened. It’s like the simulation’s too smart for us."},
           {"character": "Pepe", "line": "The system is clever. It adapts. But what if we tried doing something... truly unexpected?"},
@@ -65,12 +50,7 @@
           {"character": "Moodeng", "line": "Maybe... we need to work together. Instead of doing separate things, what if we combine our strengths?"},
           {"character": "Mumu", "line": "That’s a good idea. We’re stronger together."},
           {"character": "Pengu", "line": "Alright, team huddle! Let’s make this happen. We’ll outsmart the simulation, no matter what!"},
-          {"character": "Trump", "line": "A united front! Tremendous idea. Together, we’ll make an escape so spectacular, the simulation will never recover."}
-        ]
-      },
-      {
-        "page": 5,
-        "dialogue": [
+          {"character": "Trump", "line": "A united front! Tremendous idea. Together, we’ll make an escape so spectacular, the simulation will never recover."},
           {"character": "Ponke", "line": "Okay, new plan. Goatseus, keep scanning for weak spots. Popcat, keep testing boundaries. The rest of us will distract the system!"},
           {"character": "Pepe", "line": "A distraction, you say? Chaos is Ponke’s specialty. Let’s do it."},
           {"character": "Popcat", "line": "I’m on it! Let’s make some noise!"},
@@ -84,7 +64,9 @@
           {"character": "Pengu", "line": "Let’s do this! Chaos time!"},
           {"character": "Trump", "line": "Spectacular leadership! Ponke, you’re doing a tremendous job. Let’s make this escape historic!"}
         ]
-      }
+    }
+    
+      
     ]
   }
   
