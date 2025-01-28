@@ -72,9 +72,6 @@ git clone https://github.com/Malinhara/deepverse.git
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
 
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
-
 ## Deepverse Tech Stack Overview
 
 ### Data Collection & Ingestion:
