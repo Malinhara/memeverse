@@ -76,17 +76,15 @@ git clone https://github.com/Malinhara/deepverse.git
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
 
 
-## Deepverse Tech Stack Overview
+## Deepverse Tech Stack
 
 ### Data Collection & Ingestion:
 
-1. Real-time data from social media (Twitter, Telegram, TikTok)
-  Data Storage & Management:
-
+1. Data Storage & Management
 2. Snowflake for scalable data warehousing
 3. Elasticsearch for fast indexing
 4. MongoDB for unstructured content
-5. TensorFlow & PyTorch for sentiment analysis and trend prediction
+5. TensorFlow & PyTorch
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
 
