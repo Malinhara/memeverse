@@ -9,6 +9,8 @@
     border: 4px solidrgb(11, 11, 10); /* Neon green border */
     border-radius: 10px;
     overflow-y: auto;
+    line-height: 1.5; /* Increased line spacing */
+    letter-spacing: 0.5px; /* Slightly increased letter spacing */
 }
 
 /* Close Button */
