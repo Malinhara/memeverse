@@ -38,7 +38,7 @@ For more details, visit Deepverse.
 
 ## 🎯 Use Cases
 
-- 🤖 Chatbots
+- 🤖 Ai Agent
 - 🕵️ Autonomous Agents
 - 🧠 Trading
 
