@@ -104,7 +104,7 @@ git clone https://github.com/Malinhara/deepverse.git
 
 **Client:** Html,CSS, js
 
-**LLM:** Deepseeker Api
+**LLM:** Deepseek Api
 
 **Social media Api:** Twitter 
 
