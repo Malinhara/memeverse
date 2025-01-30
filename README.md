@@ -16,6 +16,7 @@
   <a href="https://twitter.com/YourTwitterLink" target="_blank">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter">
   </a>
+  <br>
   <a href="https://solana.com" target="_blank">
     <img src="https://img.shields.io/badge/Solana-0A1D47?style=for-the-badge&logo=solana&logoColor=white" alt="Solana">
   </a>
