@@ -1,7 +1,7 @@
 
 <h1>Deepverse 🤖</h1>
 
-## Powered by the Deepseek .
+## Powered by the Deepseek.
 
 <p align="left">
   <a href="![image](https://github.com/user-attachments/assets/2cdb2854-e3f5-4dc5-81e8-e92f9a1b7365)" target="_blank">
