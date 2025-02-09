@@ -595,7 +595,7 @@ async function openModal(email) {
 
   try {
       // Fetch agent data from the API
-      const response = await fetch(`https://ai-saas-backend-seven.vercel.app/user/chat/profile?email=${email}`);
+      const response = await fetch(`https://deepverse-backend.vercel.app/user/chat/profile?email=${email}`);
       if (!response.ok) {
           throw new Error('Failed to fetch agent data');
       }
