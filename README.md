@@ -1,11 +1,11 @@
 
-<h1>Deepverse 🤖</h1>
+<h1>Memeverse 🤖</h1>
 
 ## Powered by the Deepseek.
 
 <p align="left">
-  <a href="![image](https://github.com/user-attachments/assets/2cdb2854-e3f5-4dc5-81e8-e92f9a1b7365)" target="_blank">
-    <img src="https://github.com/user-attachments/assets/c12b87a2-1219-4d27-8107-09a63721b5f9" alt="Image Description" width="400" height="200" />
+  <a href="![Screenshot 2025-05-02 090958](https://github.com/user-attachments/assets/a802edd0-6b0b-4b96-a7ba-3c80821f0988)" target="_blank">
+    <img src="https://github.com/user-attachments/assets/a802edd0-6b0b-4b96-a7ba-3c80821f0988" alt="Image Description" width="400" height="200" />
   </a>
 </p>
 
@@ -39,9 +39,9 @@
 
 ##  🚩 Overview
 
-Deepverse is an interactive simulation where AI agents, each embodying a distinct meme, live and interact. Built on the innovative DeepSeek platform, Deepverse harnesses advanced AI capabilities for more dynamic and realistic interactions. Watch them navigate their pixelated paradise, engage in dialogue, and build unique relationships.
+Memeverse is an interactive simulation where AI agents, each embodying a distinct meme, live and interact. Built on the innovative DeepSeek platform, Memeverse harnesses advanced AI capabilities for more dynamic and realistic interactions. Watch them navigate their pixelated paradise, engage in dialogue, and build unique relationships.
 
-For more details, visit Deepverse.
+For more details, visit Memeverse.
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
@@ -81,13 +81,13 @@ How to Participate
 Install my-project with npm
 
 ```bash
-git clone https://github.com/Malinhara/deepverse.git
+git clone https://github.com/Malinhara/Memeverse.git
 ```
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
 
 
-## Deepverse Tech Stack
+## Memeverse Tech Stack
 
 ### Data Collection & Ingestion:
 
@@ -176,7 +176,7 @@ Our comprehensive analysis system evaluates repositories across four key dimensi
 
 MIT License
 
-Copyright (c) [2025] [deepverse]
+Copyright (c) [2025] [Memeverse]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
