@@ -43,41 +43,41 @@ image.src = './img/Pellet Town.png';
 
 
 const BoboImage = new Image();
-BoboImage.src = './img/Bobo.png';
+BoboImage.src = './img/newqwen.png';
 
 const DogeImage = new Image();
-DogeImage .src = './img/Doge.png';
+DogeImage .src = './img/perplexity.png';
 
 const DukImage = new Image();
-DukImage .src = './img/Duk.png';
+DukImage .src = './img/deepseek.png';
 // Initialize players
 const GoatseusImage = new Image();
-GoatseusImage.src='./img/Goatseus.png'
+GoatseusImage.src='./img/gemini.png'
 
 const MoodengImage = new Image();
-MoodengImage.src='./img/moodeng.png'
+MoodengImage.src='./img/claudeai.png'
 
 const MumuImage = new Image();
-MumuImage.src='./img/mumu.png'
+MumuImage.src='./img/grokai.png'
 
 const PenguImage = new Image();
-PenguImage.src='./img/pengu.png'
+PenguImage.src='./img/chatgpt.png'
 
 const PepeImage = new Image();
-PepeImage.src='./img/pepe.png'
+PepeImage.src='./img/YuanBao.png'
 
 const PnutImage = new Image();
-PnutImage.src='./img/pnut.png'
+PnutImage.src='./img/KIMI.png'
 
 
-const PonkeImage = new Image();
-PonkeImage.src='./img/ponke.png'
+// const PonkeImage = new Image();
+// PonkeImage.src='./img/ponke.png'
 
-const PopcatImage = new Image();
-PopcatImage.src='./img/popcat.png'
+// const PopcatImage = new Image();
+// PopcatImage.src='./img/popcat.png'
 
-const TrumpImage = new Image();
-TrumpImage.src='./img/trump.png'
+// const TrumpImage = new Image();
+// TrumpImage.src='./img/trump.png'
 
 const Bobo = new Sprite({
   position: {
@@ -230,54 +230,54 @@ const Pnut= new Sprite({
 
 
 
-const Popcat= new Sprite({
-  position: {
-    x: canvas.width / 2 - (-1099) / 1 / 2,
-    y: canvas.height / 2 - 28 / 1
-  },
-  image: PopcatImage,
-  frames: { max: 4, hold: 10 },
-  sprites: {
-    up:PopcatImage,
-    left:PopcatImage,
-    right:PopcatImage,
-    down:PopcatImage
-  }
-})
+// const Popcat= new Sprite({
+//   position: {
+//     x: canvas.width / 2 - (-1099) / 1 / 2,
+//     y: canvas.height / 2 - 28 / 1
+//   },
+//   image: PopcatImage,
+//   frames: { max: 4, hold: 10 },
+//   sprites: {
+//     up:PopcatImage,
+//     left:PopcatImage,
+//     right:PopcatImage,
+//     down:PopcatImage
+//   }
+// })
 
 
 
 
-const Ponke= new Sprite({
-  position: {
-    x: canvas.width / 2 - 42 / 1 / 2,
-    y: canvas.height / 2 - 68 / 1
-  },
-  image: PonkeImage,
-  frames: { max: 4, hold: 10 },
-  sprites: {
-    up:PonkeImage,
-    left:PonkeImage,
-    right:PonkeImage,
-    down:PonkeImage
-  }
-})
+// const Ponke= new Sprite({
+//   position: {
+//     x: canvas.width / 2 - 42 / 1 / 2,
+//     y: canvas.height / 2 - 68 / 1
+//   },
+//   image: PonkeImage,
+//   frames: { max: 4, hold: 10 },
+//   sprites: {
+//     up:PonkeImage,
+//     left:PonkeImage,
+//     right:PonkeImage,
+//     down:PonkeImage
+//   }
+// })
 
 
-const Trump= new Sprite({
-  position: {
-    x: canvas.width / 2 - (-1599) / 1 / 2,
-    y: canvas.height / 2 - 68 / 1
-  },
-  image: TrumpImage,
-  frames: { max: 4, hold: 10 },
-  sprites: {
-    up:TrumpImage,
-    left:TrumpImage,
-    right:TrumpImage,
-    down:TrumpImage
-  }
-})
+// const Trump= new Sprite({
+//   position: {
+//     x: canvas.width / 2 - (-1599) / 1 / 2,
+//     y: canvas.height / 2 - 68 / 1
+//   },
+//   image: TrumpImage,
+//   frames: { max: 4, hold: 10 },
+//   sprites: {
+//     up:TrumpImage,
+//     left:TrumpImage,
+//     right:TrumpImage,
+//     down:TrumpImage
+//   }
+// })
 
 
 
@@ -403,43 +403,43 @@ const players = [
   },
 
 
-  { name: 'Ponke',
-    sprite:Ponke,
-    moveDirection: 'left',
-    moveSpeed: 0.5,
-    lastDirectionChange: Date.now(),
-    directionChangeInterval: 1500,
-    isStuck: false,
-    stuckTimeout: null,
-    email: 'ponke@gmail.com',
+  // { name: 'Ponke',
+  //   sprite:Ponke,
+  //   moveDirection: 'left',
+  //   moveSpeed: 0.5,
+  //   lastDirectionChange: Date.now(),
+  //   directionChangeInterval: 1500,
+  //   isStuck: false,
+  //   stuckTimeout: null,
+  //   email: 'ponke@gmail.com',
 
-  },
-
-
-  { name: 'Popcat',
-    sprite:Popcat,
-    moveDirection: 'left',
-    moveSpeed: 0.5,
-    lastDirectionChange: Date.now(),
-    directionChangeInterval: 1500,
-    isStuck: false,
-    stuckTimeout: null,
-    email: 'popcat@gmail.com',
-
-  },
+  // },
 
 
-  { name: 'Trump',
-    sprite:Trump,
-    moveDirection: 'left',
-    moveSpeed: 0.5,
-    lastDirectionChange: Date.now(),
-    directionChangeInterval: 1500,
-    isStuck: false,
-    stuckTimeout: null,
-    email: 'trump@gmail.com',
+  // { name: 'Popcat',
+  //   sprite:Popcat,
+  //   moveDirection: 'left',
+  //   moveSpeed: 0.5,
+  //   lastDirectionChange: Date.now(),
+  //   directionChangeInterval: 1500,
+  //   isStuck: false,
+  //   stuckTimeout: null,
+  //   email: 'popcat@gmail.com',
+
+  // },
+
+
+  // { name: 'Trump',
+  //   sprite:Trump,
+  //   moveDirection: 'left',
+  //   moveSpeed: 0.5,
+  //   lastDirectionChange: Date.now(),
+  //   directionChangeInterval: 1500,
+  //   isStuck: false,
+  //   stuckTimeout: null,
+  //   email: 'trump@gmail.com',
  
-  }
+  // }
 
 
 
