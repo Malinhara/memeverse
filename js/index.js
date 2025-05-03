@@ -560,6 +560,32 @@ function animate() {
 
 animate();
 
+const loadImage = (src) =>
+  new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => resolve(img);
+    img.onerror = () => reject(new Error(`Failed to load ${src}`));
+    img.src = src;
+  });
+
+Promise.all([
+  loadImage('./img/Pellet Town.png'),
+  loadImage('./img/villager/Idle.png'),
+  loadImage('./img/newqwen.png'),
+  loadImage('./img/perplexity.png'),
+  loadImage('./img/deepseek.png'),
+  loadImage('./img/gemini.png'),
+  loadImage('./img/claudeai.png'),
+  loadImage('./img/grokai.png'),
+  loadImage('./img/chatgpt.png'),
+  loadImage('./img/YuanBao.png'),
+  loadImage('./img/KIMI.png')
+])
+.then(([image, villagerImg, BoboImage, DogeImage, DukImage, GoatseusImage, MoodengImage, MumuImage, PenguImage, PepeImage, PnutImage]) => {
+  // Now safely create Sprites and start the animation
+  // (insert your code that uses these images here)
+})
+.catch(console.error);
 
 
 
