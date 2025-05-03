@@ -149,32 +149,96 @@
 /* Responsive design for smaller screens */
 @media (max-width: 990px) {
   .sidebar {
-      width: 18%; /* Full width for smaller screens */
-      height: auto; /* Adjust height */
-      padding: 10px;
-      border-radius: 10px;
+    width: 19%; /* Full width */
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
   }
 
   .agent-list {
     display: flex;
-    background:rgb(255, 255, 255); /* Vibrant green for retro feel */
-    border: 4px solid #4bff01; /* Bright green border for pop */
-    padding: 20px;
-    border-radius: 10px; /* Smooth corners */
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    padding: 15px;
+    background: #ffffff;
+    border: 4px solid #4bff01;
+    border-radius: 10px;
   }
-  
 
   .agent-row {
-      font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px; /* Slightly larger for readability */
+    flex-wrap: wrap; /* Wrap items if needed */
+  }
+
+  .agent-name {
+    flex: 1;
+    min-width: 40%;
   }
 
   .vote-button {
-      font-size: 10px;
-      padding: 4px 8px;
+    font-size: 12px;
+    padding: 6px 12px;
+    margin-left: 0; /* remove inline margin-left */
+    flex-shrink: 0;
+  }
+
+  .vote-count {
+    flex-basis: 100%;
+    text-align: right;
+    margin-top: 5px;
   }
 }
+
+
+
+@media (max-width:413px) {
+  .sidebar {
+    width: 35%; /* Full width */
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .agent-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    background: #ffffff;
+    border: 4px solid #4bff01;
+    border-radius: 10px;
+  }
+
+  .agent-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px; /* Slightly larger for readability */
+    flex-wrap: wrap; /* Wrap items if needed */
+  }
+
+  .agent-name {
+    flex: 1;
+    min-width: 40%;
+  }
+
+  .vote-button {
+    font-size: 12px;
+    padding: 6px 12px;
+    margin-left: 0; /* remove inline margin-left */
+    flex-shrink: 0;
+  }
+
+  .vote-count {
+    flex-basis: 100%;
+    text-align: right;
+    margin-top: 5px;
+  }
+}
+
 
 /* Close button styling */
 .close-btn1 {
