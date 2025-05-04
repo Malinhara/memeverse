@@ -70,7 +70,7 @@ async function loadChatMessages() {
   }
 
   // Load the first 50 messages instantly
-  for (let i = 0; i < Math.min(50, dialogue.length); i++) {
+  for (let i = 0; i < Math.min(20, dialogue.length); i++) {
     const message = dialogue[i];
     const messageDiv = document.createElement('div');
     messageDiv.classList.add('chat-message');
