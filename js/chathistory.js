@@ -79,6 +79,6 @@ async function loadChatMessages() {
   }
 
   // Start typing the remaining messages
-  index = 50;
+  index = 20;
   displayMessage();
 }
