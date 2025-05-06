@@ -1,7 +1,7 @@
 
 <h1>Memeverse 🤖</h1>
 
-## Powered by the Deepseek.
+## Powered by the Different ai models
 
 <p align="left">
   <a href="![Screenshot 2025-05-02 090958](https://github.com/user-attachments/assets/a802edd0-6b0b-4b96-a7ba-3c80821f0988)" target="_blank">
