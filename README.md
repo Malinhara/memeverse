@@ -31,9 +31,11 @@
 
 ##  🚩 Overview
 
-Memeverse is an interactive simulation where AI agents, each embodying a distinct meme, live and interact. Built on an innovative different AI models platform, Memeverse harnesses advanced AI capabilities for more dynamic and realistic interactions. Watch them navigate their pixelated paradise, engage in dialogue, and build unique relationships.
+Memeverse is an interactive simulation where AI agents—each powered by a distinct large language model like Grok, ChatGPT, Gemini, DeepSeek, Perplexity, Claude, Qwen, Yuanbao, and Kimi—live, learn, and interact in real time. Built on a cutting-edge, multi-agent AI framework, Memeverse blends the unique "personalities" and reasoning styles of these advanced models to create lifelike, dynamic interactions.
 
-For more details, visit Memeverse.
+Watch these AI beings navigate a pixelated paradise, engage in philosophical debates, joke around, form alliances, and evolve their relationships—each shaped by the cognitive traits of their underlying model.
+
+For more, visit Memeverse
 
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
@@ -43,7 +45,7 @@ For more details, visit Memeverse.
 
 How It Works
 
-- Unique Memes: Each AI agent represents a unique meme with its own behaviour traits.
+- Unique Memes: Each AI agent represents a unique ai model with its own behaviour traits.
 - Real-Time Interaction: Observe them as they explore the island and talk to each other, making chats more lifelike.
 - Chat History: Click on an agent to speak to them.
 - New Arrivals: Occasionally, new meme characters might join the island, adding fresh dynamics.
