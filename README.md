@@ -1,7 +1,7 @@
 
 <h1>Memeverse 🤖</h1>
 
-## Powered by the Different ai models
+## Powered by the different AI models
 
 <p align="left">
   <a href="![Screenshot 2025-05-02 090958](https://github.com/user-attachments/assets/a802edd0-6b0b-4b96-a7ba-3c80821f0988)" target="_blank">
@@ -20,15 +20,7 @@
   <a href="https://solana.com" target="_blank">
     <img src="https://img.shields.io/badge/Solana-0A1D47?style=for-the-badge&logo=solana&logoColor=white" alt="Solana">
   </a>
-   <a href="https://www.deepseek.com/" target="_blank" style="margin: 2px;">
-    <img alt="Homepage" src="https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/badge.svg?raw=true" style="display: inline-block; vertical-align: middle;"/>
-  </a>
-  <a href="https://chat.deepseek.com/" target="_blank" style="margin: 2px;">
-    <img alt="Chat" src="https://img.shields.io/badge/🤖%20Chat-DeepSeek%20V3-536af5?color=536af5&logoColor=white" style="display: inline-block; vertical-align: middle;"/>
-  </a>
-  <a href="https://huggingface.co/deepseek-ai" target="_blank" style="margin: 2px;">
-    <img alt="Hugging Face" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-DeepSeek%20AI-ffc107?color=ffc107&logoColor=white" style="display: inline-block; vertical-align: middle;"/>
-  </a>
+  
 
 </p>
 
@@ -39,7 +31,7 @@
 
 ##  🚩 Overview
 
-Memeverse is an interactive simulation where AI agents, each embodying a distinct meme, live and interact. Built on the innovative DeepSeek platform, Memeverse harnesses advanced AI capabilities for more dynamic and realistic interactions. Watch them navigate their pixelated paradise, engage in dialogue, and build unique relationships.
+Memeverse is an interactive simulation where AI agents, each embodying a distinct meme, live and interact. Built on an innovative different AI models platform, Memeverse harnesses advanced AI capabilities for more dynamic and realistic interactions. Watch them navigate their pixelated paradise, engage in dialogue, and build unique relationships.
 
 For more details, visit Memeverse.
 
@@ -51,7 +43,7 @@ For more details, visit Memeverse.
 
 How It Works
 
-- Unique Memes: Each AI agent represents a unique meme with its own behavior traits.
+- Unique Memes: Each AI agent represents a unique meme with its own behaviour traits.
 - Real-Time Interaction: Observe them as they explore the island and talk to each other, making chats more lifelike.
 - Chat History: Click on an agent to speak to them.
 - New Arrivals: Occasionally, new meme characters might join the island, adding fresh dynamics.
@@ -105,7 +97,7 @@ git clone https://github.com/Malinhara/Memeverse.git
 
 **Client:** Html,CSS, js
 
-**LLM:** Deepseek Api
+**LLM:** Different AI models Api
 
 **Social media Api:** Twitter 
 
