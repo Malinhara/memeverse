@@ -241,7 +241,7 @@
     <h2>Finite backroom</h2>
 
     <!-- ✅ Add this -->
-    <div id="chatHistory" class="chat-history" style="max-height: 300px; overflow-y: auto; margin-top: 10px;"></div>
+    <div id="chatHistory" class="chat-history"></div>
 
     <div style="display: flex; align-items: center; gap: 8px; margin-top: 10px;">
       <input 
@@ -386,6 +386,12 @@ const closeBtn = document.querySelector('.close');
 const sendPromptBtn = document.getElementById('sendPrompt');
 const userPromptInput = document.getElementById('userPrompt');
 
+
+userPromptInput.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    sendPromptBtn.click();
+  }
+});
 // Open the modal
 animalChatButton.onclick = () => {
   chatModal.style.display = 'block';
