@@ -239,9 +239,23 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Finite backroom</h2>
-    <div id="chatHistory" class="chat-history">
-      <!-- Chat data will be dynamically loaded here -->
+
+    <div style="display: flex; align-items: center; gap: 8px; margin-top: 10px;">
+      <input 
+        type="text" 
+        id="userPrompt" 
+        placeholder="Ask something..." 
+        style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"
+      />
+      
+      <button 
+        id="sendPrompt" 
+        style="padding: 10px 16px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;"
+      >
+        Send
+      </button>
     </div>
+
   </div>
 </div>
 
