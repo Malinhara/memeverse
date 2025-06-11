@@ -3,82 +3,89 @@ const animalChatButton = document.getElementById('animalchat');
 const chatModal = document.getElementById('chatModal');
 const chatHistory = document.getElementById('chatHistory');
 const closeBtn = document.querySelector('.close');
+const sendPromptBtn = document.getElementById('sendPrompt');
+const userPromptInput = document.getElementById('userPrompt');
 
-// Open the modal when clicking the Animal chat button
-animalChatButton.onclick = function() {
+// Open the modal
+animalChatButton.onclick = () => {
   chatModal.style.display = 'block';
-  loadChatMessages();
 };
 
-// Close the modal when clicking the close button
-closeBtn.onclick = function() {
+// Close modal
+closeBtn.onclick = () => {
   chatModal.style.display = 'none';
 };
 
-// Close the modal if clicked outside of it
-window.onclick = function(event) {
+// Close modal if clicked outside
+window.onclick = (event) => {
   if (event.target === chatModal) {
     chatModal.style.display = 'none';
   }
 };
 
-// Fetch chat data from JSON file
-async function loadChatData() {
-  const response = await fetch('js/chatData.json'); // Adjust the path if needed
-  const data = await response.json();
-  return data;
-}
+// Send user prompt
+sendPromptBtn.onclick = async () => {
+  const prompt = userPromptInput.value.trim();
+  if (!prompt) return;
 
-// Function to load chat messages
-async function loadChatMessages() {
-  const chatData = await loadChatData(); // Fetch chat data from JSON
-  const dialogue = chatData.pages[0].dialogue; // Get the dialogue from JSON
-  let index = 0;
+  // Show user prompt
+  const userDiv = document.createElement('div');
+  userDiv.classList.add('chat-message');
+  userDiv.innerHTML = `<strong>You:</strong> ${prompt}`;
+  chatHistory.appendChild(userDiv);
+  chatHistory.scrollTop = chatHistory.scrollHeight;
+  userPromptInput.value = '';
 
-  // Clear previous messages
-  chatHistory.innerHTML = '';
+  try {
+    const response = await fetch('https://ai-saas-backend-seven.vercel.app/user/chatall', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prompt })
+    });
 
-  // Function to display the next message with typing effect
-  function displayMessage() {
-    if (index < dialogue.length) {
-      const message = dialogue[index];
-      const messageDiv = document.createElement('div');
-      messageDiv.classList.add('chat-message');
+    const result = await response.json();
+    const replies = result.message; // Assuming result.message is an array of { character, line }
 
-      // Create the message content
-      const messageContent = `<strong>${message.character}:</strong> `;
-      messageDiv.innerHTML = messageContent;
-      
-      chatHistory.appendChild(messageDiv);
-
-      // Type the line character by character
-      let charIndex = 0;
-      function typeLine() {
-        if (charIndex < message.line.length) {
-          messageDiv.innerHTML = messageContent + message.line.substring(0, charIndex + 1);
-          charIndex++;
-          setTimeout(typeLine, 50); // Adjust the typing speed (ms per character)
-        } else {
-          index++;
-          setTimeout(displayMessage, 1500); // Wait before showing the next message
-        }
-      }
-
-      // Start typing the line
-      typeLine();
+    if (!Array.isArray(replies)) {
+      throw new Error('Invalid response format from server.');
     }
-  }
 
-  // Load the first 50 messages instantly
-  for (let i = 0; i < Math.min(20, dialogue.length); i++) {
-    const message = dialogue[i];
-    const messageDiv = document.createElement('div');
-    messageDiv.classList.add('chat-message');
-    messageDiv.innerHTML = `<strong>${message.character}:</strong> ${message.line}`;
-    chatHistory.appendChild(messageDiv);
-  }
+    // Display replies one by one
+    let replyIndex = 0;
 
-  // Start typing the remaining messages
-  index = 20;
-  displayMessage();
-}
+    function displayReply() {
+      if (replyIndex < replies.length) {
+        const reply = replies[replyIndex];
+        const replyDiv = document.createElement('div');
+        replyDiv.classList.add('chat-message');
+        replyDiv.innerHTML = `<strong>${reply.character}:</strong> `;
+
+        chatHistory.appendChild(replyDiv);
+        chatHistory.scrollTop = chatHistory.scrollHeight;
+
+        let charIndex = 0;
+        function typeReply() {
+          if (charIndex < reply.line.length) {
+            replyDiv.innerHTML = `<strong>${reply.character}:</strong> ${reply.line.substring(0, charIndex + 1)}`;
+            charIndex++;
+            setTimeout(typeReply, 40);
+          } else {
+            replyIndex++;
+            setTimeout(displayReply, 800);
+          }
+        }
+
+        typeReply();
+      }
+    }
+
+    displayReply();
+
+  } catch (err) {
+    console.error('Error:', err);
+    const errorDiv = document.createElement('div');
+    errorDiv.classList.add('chat-message');
+    errorDiv.innerHTML = `<strong>Error:</strong> Failed to fetch replies.`;
+    chatHistory.appendChild(errorDiv);
+  }
+};
