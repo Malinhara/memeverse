@@ -58,14 +58,15 @@
 
 /* Chat history container */
 .chat-history {
-    flex: 1; /* Take up remaining space */
+    flex: 1;
+    max-height: 900px;
     overflow-y: auto;
-    padding: 8px; /* Reduced padding */
+    padding: 8px;
     background-color: rgb(227, 236, 144);
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-top: 10px;
-    font-size: 14px; /* Adjusted font size */
+    font-size: 14px;
 }
 
 /* Chat message */
@@ -99,3 +100,16 @@
 .close:hover {
     color: black;
 }
+
+
+@media (max-width: 990px) {
+
+  .chat-history {
+    max-height: 1200px; /* Take up 70% of screen height */
+    font-size: 13px;
+  }
+   
+
+  
+  
+  }
