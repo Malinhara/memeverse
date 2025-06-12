@@ -108,6 +108,20 @@
     max-height: 1200px; /* Take up 70% of screen height */
     font-size: 13px;
   }
+
+
+
+}
+
+@media (max-width: 450px) {
+
+
+  .modal {
+
+    width: 38%; /* Set the width of the modal */
+    height: 35%; /* Full height */
+
+}
    
 
   
