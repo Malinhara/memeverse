@@ -1,22 +1,11 @@
 /* Style for the modal */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 28%; /* Adjust width for the left side */
-    height: 100vh; /* Full height */
-    background-color: rgba(0, 0, 0, 0.9); /* Enhanced darker background with transparency */
-    z-index: 9999; /* Ensure it's on top of other content */
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Subtle glowing effect */
-}
 
 /* Modal content */
 .modal-content2 {
     background-color: #1e1e1e; /* Dark grey content background for contrast */
     position: relative;
-    height: 90%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     padding: 20px;
     box-sizing: border-box;
     border-left: 4px solid #79d70f; /* Green retro border */
@@ -105,8 +94,8 @@
         position: fixed;
         top: 10;
         left: 0;
-        width: 28%; /* Adjust width for the left side */
-        height: 1000px;
+        width: 55%; /* Adjust width for the left side */
+        height: auto;
         background-color: rgba(0, 0, 0, 0.9); /* Enhanced darker background with transparency */
         z-index: 9999; /* Ensure it's on top of other content */
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Subtle glowing effect */
