@@ -157,7 +157,7 @@
         position: fixed;
         top: 10;
         left: 0;
-        width: 38%; /* Adjust width for the left side */
+        width: 45%; /* Adjust width for the left side */
         height: 1000px;
         background-color: rgba(0, 0, 0, 0.9); /* Enhanced darker background with transparency */
         z-index: 9999; /* Ensure it's on top of other content */
