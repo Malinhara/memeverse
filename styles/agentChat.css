@@ -19,7 +19,7 @@
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    border-left: 4px solid #79d70f; /* Green retro border */
+    border-left: 2px solid #79d70f; /* Green retro border */
 }
 
 /* Close button styling */
@@ -53,11 +53,11 @@
 /* Common box styling */
 .box {
     background-color:rgb(20, 20, 19); /* Vibrant green for retro feel */
-    padding: 15px;
+    padding: 8px;
     border: 5px solid #4bff01; /* Light green border for retro style */
     border-radius: 15px;
-    width: 320px;
-    margin: 20px auto;
+    width: 280px;
+    margin: 10px auto;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); /* Stronger neon glow */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -143,7 +143,7 @@
 
     iframe{
 
-        height:400px;
+        height:550px;
     }
   
   
@@ -195,7 +195,7 @@
 
     iframe{
 
-        height:400px;
+        height:550px;
         width:100%;
     }
   
