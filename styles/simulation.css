@@ -127,10 +127,10 @@
 }
 
 .vote-button-grok{
-  margin-left:47%;
+  margin-left:40%;
   background: #333; /* Dark background for contrast */
   color: white; /* White text */
-  padding: 6px 13px; /* Better padding for clickability */
+  padding: 5px 15px; /* Better padding for clickability */
   border: 1px solid #000; /* Bold border for retro design */
   cursor: pointer;
   font-family: 'Press Start 2P', cursive; /* Retro font */
@@ -139,6 +139,7 @@
   box-shadow: 0 4px 0 #000; /* Depth with shadow */
   transition: transform 0.2s ease, background-color 0.3s ease;
 }
+
 
 
 .vote-icon {
