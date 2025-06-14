@@ -56,7 +56,7 @@
     padding: 15px;
     border: 5px solid #4bff01; /* Light green border for retro style */
     border-radius: 15px;
-    width: 300px;
+    width: 320px;
     margin: 20px auto;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); /* Stronger neon glow */
@@ -105,16 +105,44 @@
         position: fixed;
         top: 10;
         left: 0;
-        width: 28%; /* Adjust width for the left side */
+        width: 38%; /* Adjust width for the left side */
         height: 1000px;
         background-color: rgba(0, 0, 0, 0.9); /* Enhanced darker background with transparency */
         z-index: 9999; /* Ensure it's on top of other content */
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Subtle glowing effect */
     }
 
+    .h1-box {
+    margin-bottom: 6px; /* Space between the header and content */
+}
+
+/* Header with pixelated 8-bit look */
+.agent-info h1 {
+    color: #0cff00; /* Bright green retro text */
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.7); /* Neon text effect */
+}
+
+/* Paragraph styling */
+.agent-info p {
+    color: #99ffcc; /* Light teal for readability on black */
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 255, 0, 0.6); /* Retro glow */
+}
+
+/* Hover effect for text boxes */
+.p-box:hover {
+    background-color: #1e1e1e; /* Slightly darken background */
+    color: #79d70f; /* Green text highlight */
+}
+
+
     iframe{
 
-        height:450px;
+        height:550px;
     }
   
   
