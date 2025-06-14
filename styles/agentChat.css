@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 35%; /* Adjust width for the left side */
+    width: 55%; /* Adjust width for the left side */
     height: 100vh; /* Full height */
     background-color: rgba(0, 0, 0, 0.9); /* Enhanced darker background with transparency */
     z-index: 9999; /* Ensure it's on top of other content */
