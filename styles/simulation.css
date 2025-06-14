@@ -8,10 +8,6 @@ body {
     background: #8fcfe9;
     font-family: 'Press Start 2P', cursive;
     overflow: hidden;
-  padding-top: env(safe-area-inset-top);
-  padding-right: env(safe-area-inset-right);
-  padding-bottom: env(safe-area-inset-bottom);
-  padding-left: env(safe-area-inset-left);
   }
   
 /* Sidebar styling */
