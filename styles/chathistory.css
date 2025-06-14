@@ -10,11 +10,12 @@
     z-index: 100; /* Sit on top */
     left: 0; /* Align to the left */
     top: 0; /* Start at the top */
-    width: 30%; /* Set the width of the modal */
+    width: 35%; /* Set the width of the modal */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
 }
+
 
 /* Modal content */
 .modal-content {
