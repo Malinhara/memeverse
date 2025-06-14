@@ -1,20 +1,7 @@
 /* Button styling */
-.button {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    padding: 8px 16px; /* Reduced padding */
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px; /* Reduced font size */
-    box-shadow: 0 4px #999;
-    transition: all 0.2s ease;
-}
 
-.button:hover {
-    background-color: #45a049;
-    transform: scale(1.05);
-}
+
+
 
 /* Modal styling */
 .modal {
@@ -104,10 +91,43 @@
 
 @media (max-width: 990px) {
 
-  .chat-history {
-    max-height: 1200px; /* Take up 70% of screen height */
-    font-size: 13px;
-  }
+.modal {
+
+    width: 50%; /* Set the width of the modal */
+    height: 90%; /* Full height */
+
+}
+   
+
+.chat-history {
+    flex: 1;
+    max-height: 900px;
+    overflow-y: auto;
+    padding: 8px;
+    background-color: rgb(227, 236, 144);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Chat message */
+
+.chat-message {
+    padding: 6px;
+    margin-bottom: 10px; /* Increased gap between each message */
+    background-color: #e9ffe5; /* Light green */
+    border: 1px solid #c6ecc6;
+    border-radius: 8px;
+    word-wrap: break-word;
+    font-size: 8px;
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+/* Chat message alternate style */
+.chat-message:nth-child(odd) {
+    background-color: #fff9e6; /* Light yellow for alternating messages */
+}
 
 
 
@@ -118,8 +138,8 @@
 
   .modal {
 
-    width: 38%; /* Set the width of the modal */
-    height: 35%; /* Full height */
+    width: 80%; /* Set the width of the modal */
+    height: 80%; /* Full height */
 
 }
    
