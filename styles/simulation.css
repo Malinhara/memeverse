@@ -140,6 +140,11 @@
   transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
+.vote-button-grok:hover {
+  background: #79d70f; /* Neon green background */
+  color: #000; /* Dark text */
+  transform: scale(1.1); /* Slight zoom on hover */
+}
 
 
 .vote-icon {
