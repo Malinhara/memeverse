@@ -166,7 +166,7 @@
   height: auto;
   margin-top: 20px;
   text-align: center;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.8;
   color: #e0e0e0; /* Light grey text for readability */
   border-radius: 10px; /* Smooth corners */
@@ -177,7 +177,7 @@
 @media (max-width: 990px) {
  .sidebar {
     width: 20%; /* Full width */
-    height: 38%;
+    height: 42%;
     padding: 10px;
     border-radius: 10px;
     overflow-y: auto; /* Enable scrolling */
@@ -186,14 +186,14 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  font-size: 8px; /* Slightly larger for better readability */
+  font-size: 12px; /* Slightly larger for better readability */
   color: #000;
   font-weight: bold; /* Emphasized text */
 }
 
 .vote-button-grok{
 
-    font-size: 8px;
+    font-size: 12px;
     padding: 3px 6px;
     margin-left: 0; /* remove inline margin-left */
     flex-shrink: 0;
@@ -223,7 +223,7 @@
   }
 
   .vote-button {
-    font-size: 8px;
+    font-size: 12px;
     padding: 3px 6px;
     margin-left: 0; /* remove inline margin-left */
     flex-shrink: 0;
@@ -237,7 +237,7 @@
 
   .agent-name {
   cursor: pointer;
-  font-size:8px;
+  font-size:14px;
   color:rgb(19, 9, 9); /* Deep green for retro look */
   transition: color 0.3s ease;
 }
