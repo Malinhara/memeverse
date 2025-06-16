@@ -176,8 +176,8 @@
 /* Responsive design for smaller screens */
 @media (max-width: 990px) {
  .sidebar {
-    width: 40%; /* Full width */
-    height: 99vh;
+    width: 20%; /* Full width */
+    height: 38%;
     padding: 10px;
     border-radius: 10px;
     overflow-y: auto; /* Enable scrolling */
@@ -192,7 +192,7 @@
 }
 
 .vote-button-grok{
-  margin-left:44%;
+
     font-size: 8px;
     padding: 3px 6px;
     margin-left: 0; /* remove inline margin-left */
@@ -439,6 +439,5 @@
   color: white; /* Invert color */
   transform: scale(1.2); /* Slight zoom effect */
 }
-
 
 
