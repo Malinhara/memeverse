@@ -13,7 +13,7 @@
     width: 30%; /* Set the width of the modal */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+   
 }
 
 
@@ -94,15 +94,12 @@
 
 .modal {
 
-    width: 50%; /* Set the width of the modal */
-    height: 90%; /* Full height */
-
 }
    
 
 .chat-history {
     flex: 1;
-    max-height: 900px;
+    max-height: 100%;
     overflow-y: auto;
     padding: 8px;
     background-color: rgb(227, 236, 144);
