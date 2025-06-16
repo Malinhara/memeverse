@@ -177,7 +177,7 @@
 @media (max-width: 990px) {
  .sidebar {
     width: 20%; /* Full width */
-    height: 57%;
+    height: 61%;
     padding: 10px;
     border-radius: 10px;
     overflow-y: auto; /* Enable scrolling */
