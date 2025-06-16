@@ -97,6 +97,7 @@
 }
    
 
+
 .chat-history {
     flex: 1;
     max-height: 100%;
@@ -106,7 +107,15 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 24px;
+}
+
+#userPrompt::placeholder {
+  font-size: 24px;
+}
+#sendPrompt{
+
+    font-size:24px;
 }
 
 /* Chat message */
@@ -118,7 +127,7 @@
     border: 1px solid #c6ecc6;
     border-radius: 8px;
     word-wrap: break-word;
-    font-size: 8px;
+    font-size: 24px;
     line-height: 1.5; /* Adjust line height for better readability */
 }
 
