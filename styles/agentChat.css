@@ -13,13 +13,7 @@
 
 /* Modal content */
 .modal-content2 {
-    background-color: #1e1e1e; /* Dark grey content background for contrast */
-    position: relative;
-    height: 90%;
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-    border-left: 2px solid #79d70f; /* Green retro border */
+ 
 }
 
 /* Close button styling */
@@ -143,7 +137,7 @@
 
     iframe{
 
-        height:550px;
+        height:80%;
     }
   
   
