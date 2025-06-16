@@ -69,22 +69,34 @@
     }
 
     #orientation-warning {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  color: white;
-  font-family: 'Press Start 2P', cursive;
-  display: none;
-  font-size: medium;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  z-index: 9999;
-  padding: 20px;
-}
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color:black;
+      color: white;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    @media screen and (orientation: portrait) {
+      #orientation-warning {
+        display: flex;
+      }
+    }
+
+    @media screen and (orientation: landscape) {
+      #orientation-warning {
+        display: none;
+      }
+    }
 
     /* Style for individual buttons */
     .button {
@@ -512,36 +524,21 @@ sendPromptBtn.onclick = async () => {
 </script>
 
 <script>
-function checkOrientation() {
-  const isPortrait = window.innerHeight > window.innerWidth;
-  const warning = document.getElementById("orientation-warning");
-  const content = document.body.children;
-
-  if (isPortrait) {
-    warning.style.display = "flex";
-
-    // Hide everything else except the warning
-    for (let i = 0; i < content.length; i++) {
-      if (content[i].id !== "orientation-warning") {
-        content[i].style.display = "none";
+ function checkOrientation() {
+      const warning = document.getElementById('orientation-warning');
+      if (window.matchMedia("(orientation: portrait)").matches) {
+        warning.style.display = "flex";
+      } else {
+        warning.style.display = "none";
       }
     }
-  } else {
-    warning.style.display = "none";
 
-    // Show everything else again
-    for (let i = 0; i < content.length; i++) {
-      if (content[i].id !== "orientation-warning") {
-        content[i].style.display = "";
-      }
-    }
-  }
-}
+    // Initial check
+    checkOrientation();
 
-// Initial check
-window.addEventListener("load", checkOrientation);
-window.addEventListener("resize", checkOrientation);
-window.addEventListener("orientationchange", checkOrientation);
+    // Listen for orientation changes
+    window.addEventListener("orientationchange", checkOrientation);
+    window.addEventListener("resize", checkOrientation);
 </script>
 
 <script
