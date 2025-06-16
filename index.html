@@ -68,6 +68,23 @@
       z-index: 1000; /* Ensure buttons are on top */
     }
 
+    #orientation-warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
     /* Style for individual buttons */
     .button {
       background-color: #1f221f; /* Green background */
@@ -117,6 +134,9 @@
   </button>
 </a>
   </div>
+<div id="orientation-warning">
+  Please rotate your device to landscape mode to continue.
+</div>
 
   <div class="sidebar">
     <div class="title-box">
@@ -246,7 +266,7 @@
 <div id="chatModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h2>Finite backroom</h2>
+    <h1>Finite backroom</h1>
 
     <!-- ✅ Add this -->
     <div id="chatHistory" class="chat-history"></div>
@@ -485,7 +505,43 @@ sendPromptBtn.onclick = async () => {
 };
 
 
+
+
 </script>
+
+<script>
+function checkOrientation() {
+  const isPortrait = window.innerHeight > window.innerWidth;
+  const warning = document.getElementById("orientation-warning");
+  const content = document.body.children;
+
+  if (isPortrait) {
+    warning.style.display = "flex";
+
+    // Hide everything else except the warning
+    for (let i = 0; i < content.length; i++) {
+      if (content[i].id !== "orientation-warning") {
+        content[i].style.display = "none";
+      }
+    }
+  } else {
+    warning.style.display = "none";
+
+    // Show everything else again
+    for (let i = 0; i < content.length; i++) {
+      if (content[i].id !== "orientation-warning") {
+        content[i].style.display = "";
+      }
+    }
+  }
+}
+
+// Initial check
+window.addEventListener("load", checkOrientation);
+window.addEventListener("resize", checkOrientation);
+window.addEventListener("orientationchange", checkOrientation);
+</script>
+
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
   integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
