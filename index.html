@@ -145,7 +145,7 @@
 <img src="img/solana.png" alt="Solona Logo" style="width: 40px; height: 40px;" class="solona-logo">
  <div class="buttons-container">
     <button class="button" id="connectWalletButton">Connect Wallet</button>
-    <button class="button" id="animalchat">Finite backroom</button>
+    <button class="button" id="animalchat">Infinite backroom</button>
     <button  class="button" id="aboutButton">About</button>
     <button class="button" id="musicButton">Music</button>
     <audio id="audioPlayer" src="audio/victory.wav"></audio>
@@ -292,7 +292,7 @@
 <div id="chatModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <h2>Finite backroom</h2>
+    <h2>Infinite backroom</h2>
 
     <!-- ✅ Add this -->
     <div id="chatHistory" class="chat-history"></div>
@@ -511,7 +511,7 @@ sendPromptBtn.onclick = async () => {
           if (charIndex < reply.line.length) {
             replyDiv.innerHTML = `<strong>${reply.character}:</strong> ${reply.line.substring(0, charIndex + 1)}`;
             charIndex++;
-            setTimeout(typeReply, 40);
+             setTimeout(typeReply, 15);
           } else {
             replyIndex++;
             setTimeout(displayReply, 800);
