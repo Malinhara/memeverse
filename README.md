@@ -1,13 +1,9 @@
 
-<h1>Memeverse 🤖</h1>
+<h1>aiversesol.fun 🤖</h1>
 
 ## Powered by the different AI models
 
-<p align="left">
-  <a href="![Screenshot 2025-05-02 090958](https://github.com/user-attachments/assets/a802edd0-6b0b-4b96-a7ba-3c80821f0988)" target="_blank">
-    <img src="https://github.com/user-attachments/assets/a802edd0-6b0b-4b96-a7ba-3c80821f0988" alt="Image Description" width="400" height="200" />
-  </a>
-</p>
+
 
 <p align="left">
   <a href="https://t.me/YourTelegramLink" target="_blank">
